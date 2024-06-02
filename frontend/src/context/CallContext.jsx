@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import Peer from "simple-peer/simplepeer.min.js";
 
 const CallContext = createContext();
-const socket = io("http://localhost:4000");
+const socket = io("https://chatapp-lts.onrender.com");
 
 const CallContextProvider = ({ children }) => {
   const [stream, setStream] = useState(null);
